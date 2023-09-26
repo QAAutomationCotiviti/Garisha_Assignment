@@ -1,9 +1,7 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 
 public class addRemove{
     static WebDriver driver= new ChromeDriver();
@@ -57,7 +55,7 @@ public class addRemove{
         driver.manage().window().maximize();
         driver.get("https://www.saucedemo.com/");
 
-        SortElements obj = new SortElements();
+        addRemove obj = new addRemove();
 
         obj.newfunction("standard_user","secret_sauce");
 
